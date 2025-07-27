@@ -23,15 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-if (defined('STDIN'))
-{
-   // You should hardcode the base url for cli, otherwise it will fails.
-   $config['base_url'] = "";
-}
-else
-{
-   $config['base_url'] = ($_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . '://'.$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-}
+$config['base_url'] = 'https://porfolio-8614f.wasmer.app/';
 
 /*
 |--------------------------------------------------------------------------
