@@ -1,0 +1,118 @@
+/* Fullscreen background and centering */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+/* Login container */
+.login-container {
+    background: #1e1e1e;
+    padding: 30px 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0077ff;
+    background: #222;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0077ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+/* Error/Success Messages */
+.error, .success {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.error {
+    background: #ff4a4a;
+    color: white;
+}
+
+.success {
+    background: #28a745;
+    color: white;
+}
+
+/* Link */
+a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a:hover {
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

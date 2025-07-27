@@ -1,0 +1,1 @@
+<?php $this->load->view('admin_header', ['title' => 'Manage Home Section']); ?>
